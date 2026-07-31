@@ -1,7 +1,28 @@
 aid: nvxclouds
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nvxclouds.png
 name: nvxclouds
-description: nvxclouds is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  nvxclouds is the web home of 锘崴科技 / NVX, whose legal entity is Hangzhou Nuowei
+  Information Technology Co., Ltd. (杭州锘崴信息科技有限公司), an information technology
+  company based in Hangzhou, Zhejiang, China. It was surfaced through the API
+  Evangelist network as a portfolio company of the venture firm Qiming. The public
+  website at nvxclouds.com is a single-page web application served over TLS from
+  Alibaba Cloud infrastructure. An enrichment pass on 2026-07-20 probed the domain
+  and common developer paths and found no public API, developer portal, OpenAPI or
+  documentation surface to catalog; this profile records the verified corporate
+  identity and domain-security posture and remains a lead pending any future
+  developer-facing API surface.
 url: https://raw.githubusercontent.com/api-evangelist/nvxclouds/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +30,19 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-legal-name: 杭州锘崴信息科技有限公司 (Hangzhou Nuowei Information Technology Co., Ltd.)
+x-brand: 锘崴科技 / NVX
+x-hq: Hangzhou, Zhejiang, China
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- China
+- Hangzhou
+- Information Technology
+- Cloud
+- Software
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nvxclouds-domain-security.yml
 - type: Website
   url: https://nvxclouds.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
